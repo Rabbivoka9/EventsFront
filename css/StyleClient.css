@@ -306,7 +306,10 @@ section{
 	width: 30px;
 }
 .about{
-	background-color: rgb(242, 241, 241);;
+	background-color: rgb(255, 255, 255);;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 input{
@@ -552,17 +555,22 @@ label{
 
 .dis{
 	display: flex;
+	gap: 30px;
+	align-items: center;
+	justify-content: space-between;
 }
+
+
 
 .descriptiontitre{
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	border: solid #491801 1px;
 	width: 900px;
 	height: 380px;
-	justify-content: center;
-	align-items: center;
-	margin-top: 70px;
-	margin-left: 280px;
+	
+	
 }
 
 .description{
@@ -582,6 +590,73 @@ label{
 .descriptiontitre{
 	border-radius: 10px 50px 10px;
 }
+
+
+.profil {
+	width: 300px;
+	height: 500px;
+	
+	margin-bottom: 20px;
+     }
+     
+     .cadre {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 5px;
+     }
+     
+     .titredescription {
+	color: #333;
+     }
+     
+     .description {
+	color: #555;
+	line-height: 1.6;
+     }
+     
+     /* CSS spécifique pour les écrans de taille maximale de 768px */
+     @media screen and (max-width: 768px) {
+	.profil {
+	  width: 150px;
+	  height: 150px;
+	}
+     
+	.cadre {
+	  padding: 10px;
+	}
+     
+	.titredescription {
+	  font-size: 24px;
+	}
+     
+	.description {
+	  font-size: 16px;
+	}
+     }
+     
+     /* CSS spécifique pour les écrans de taille maximale de 480px */
+     @media screen and (max-width: 480px) {
+
+	.about{
+		background-color: rgb(255, 255, 255);;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.profil {
+	  width: 200px;
+	  height: 400px;
+	}
+     
+	.titredescription {
+	  font-size: 20px;
+	}
+     
+	.description {
+	  font-size: 14px;
+	}
+     }
 
 
 
