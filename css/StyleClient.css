@@ -569,8 +569,7 @@ label{
 	border: solid #491801 1px;
 	width: 900px;
 	height: 380px;
-	
-	
+	color: black;
 }
 
 .description{
@@ -621,16 +620,21 @@ label{
 	  height: 150px;
 	}
      
-	.cadre {
-	  padding: 10px;
-	}
+	
      
 	.titredescription {
 	  font-size: 24px;
 	}
      
-	.description {
-	  font-size: 16px;
+	.descriptiontitre{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border: solid #491801 1px;
+		width: 400px;
+		height: 380px;
+		color: black;
 	}
      }
      
