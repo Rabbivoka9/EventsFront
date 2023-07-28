@@ -8,6 +8,22 @@
 	--box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+.biv{
+	font-size: 30px;
+	font-weight: bold;
+	/* width: 700px; */
+}
+
+
+
+
+.li{
+	width: 240px;
+	margin-left: 700px;
+	margin-top: -70px;
+	
+}
+
 * {
 	font-family: 'DM Sans', sans-serif;
 	margin: 0;
@@ -289,7 +305,7 @@ section{
 	padding: 1rem 0;
 }
 .logo{
-	width: 30px;
+	width: 50px;
 }
 .about{
 	background-color: rgb(242, 241, 241);;
@@ -392,7 +408,9 @@ textarea{
 }
 
 .footer {
-	background-color: rgb(242, 241, 241);
+	/* background: url('../images/gat.png') no-repeat; */
+	background-color: rgb(242, 241, 241); 
+	
 	text-align: center;
 }
 
