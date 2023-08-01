@@ -8,6 +8,18 @@ body {
        align-items: center;
        height: 100vh;
      }
+
+     .ii{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+
+     img{
+      width: 240px;
+      
+     }
      
      .container {
        background-color: #ffffff;
@@ -46,7 +58,7 @@ body {
      
      button {
        padding: 10px;
-       background-color: #3a1b01;
+       background-color: #3a0126;
        color: white;
        border: none;
        border-radius: 4px;
@@ -54,7 +66,7 @@ body {
      }
      
      button:hover {
-       background-color:  #3a1b01;
+       background-color:  #ec6e07;
      }
 
      a{

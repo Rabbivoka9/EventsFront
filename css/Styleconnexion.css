@@ -42,11 +42,23 @@ body {
      
      button {
        padding: 10px;
-       background-color: #3a1b01;
+       background-color:  #3a0126;
        color: white;
        border: none;
        border-radius: 4px;
        cursor: pointer;
+     }
+
+     .ii{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+
+     img{
+      width: 240px;
+      
      }
 
      p{
@@ -54,7 +66,7 @@ body {
      }
      
      button:hover {
-       background-color:  #2a1301;;
+       background-color:  #f36b03;;
      }
 
      a{

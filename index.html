@@ -1,90 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EventsOdi</title>
-       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>    <header class="header">      
-         <a href="#" class="logo"><img class="logo" src="images/LOGO PNG OK 2 1.png"/></a>        <nav class="navbar">
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img class="logo" src="images/LOGO PNG OK 2 1.png" /></a>
+        <nav class="navbar">
             <a href="#home" class="hover-underline">home</a>
             <a href="#about" class="hover-underline">Créer un Evenement</a>
             <a href="#contact" class="hover-underline">contact</a>
-        </nav>        <div class="icons">
-            <div class="fas fa-user" id="login-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>        <form action="" class="login-form">
-            <h3>Se Connecter à Votre Compte</h3>
-            <input type="email" placeholder=" Email" class="box">
-            <input type="password" placeholder="Mot de passe" class="box">
-            <div class="remember">
-                <!-- <input type="checkbox" name="" id="remember">
-                <label for="remember-me">remember-me</label> -->
-                <P>Vous n'avez pas un Compte? <a href="#">S'inscrire</a>
-                </P>
+        </nav>
+        <div class="icons">
+            <div class="cont-u">
+                <div class="fas fa-user" id="login-btn"></div>
+                <div class="user-display" id="userDisplayName"></div>
             </div>
-            <a href="#" class="btn">
-                <span class="text text-1">Connexion</span>
-                <span class="text text-2" aria-hidden="true">Connexion</span>
-            </a>
-        </form>   
-     </header>   
-      <section class="home" id="home">   
+
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
         <div class="content">
-              <h3 class="biv">Bienvenue sur la Plaforme qui vous permet de rendre unique vos Evenements</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, corrupti. Atque provident veniam eligendi doloribus placeat reiciendis!</p>
-              <a href="#" class="btn">
+            <h3 class="biv">Bienvenue sur la Plaforme qui vous permet de rendre unique vos Evenements</h3>
+            <a href="#" class="btn">
                 <span class="text text-1">Contact</span>
                 <span class="text text-2" aria-hidden="true">Contact</span>
-              </a>
-        </div>   
-     </section>   
-      <section class="about" id="about"> 
-                   <h1 class="heading">Créer Votre Evenement</h1> 
-                    <img class="li" src="images/separator.png" alt=""> 
-               <section class="contact">  
-                        
-                    <div class="row">          
-                      <form id="createEventForm" action="">
-                      <label>Titre de l'Evenement</label>
-                      <input name="titreevenent" type="text" placeholder="Titre de l'Evenement" class="box">
-                      <label>Image de Fond</label>
-                      <input name="photofond" type="text" placeholder="Photo de Fond" class="box">
-                      <label>Titre Generale</label>
-                      <input name="titregeneral" type="text" placeholder="Titre Generale" class="box">
-                      <label>Titre Description</label>
-                      <input name="titredescription" type="text" placeholder="Titre Description" class="box">
-                      <label>Description</label>
-                      <textarea name="description" placeholder="Description" cols="30" rows="10" class="box"></textarea>
-                      <label>Image de Profil</label>
-                      <input name="imageprofil" type="text" placeholder="Titre Description" class="box"> 
-                      <label>Programme</label>
-                      <input name="titre1" type="text" placeholder="Titre1" class="box">
-                      <input name="titre2" type="text" placeholder="Titre2" class="box">
-                      <a href="#" id="createEventBtn" class="btn">
+            </a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading">Créer Votre Evenement</h1>
+        <img class="li" src="images/separator.png" alt="">
+        <section class="CreatEve">
+            <div class="row">
+                <form id="createEventForm" action="">
+                    <h3>Inserer vos informations</h3>
+                    <label>Titre de l'Evenement</label>
+                    <input name="titreevenent" type="text" placeholder="Titre de l'Evenement" class="box">
+                    <label>Image de Fond</label>
+                    <input name="photofond" type="file" placeholder="Photo de Fond" class="box">
+                    <label>Titre Generale</label>
+                    <input name="titregeneral" type="text" placeholder="Titre Generale" class="box">
+                    <label>Titre Description</label>
+                    <input name="titredescription" type="text" placeholder="Titre Description" class="box">
+                    <label>Description</label>
+                    <textarea name="description" placeholder="Description" cols="30" rows="10" class="box"></textarea>
+                    <label>Image de Profil</label>
+                    <input name="imageprofil" type="file" placeholder="Titre Description" class="box">
+                    <label>Programme</label>
+                    <input name="titre1" type="text" placeholder="Titre1" class="box">
+                    <input name="titre2" type="text" placeholder="Titre2" class="box">
+                    <a href="#" id="createEventBtn" class="btn">
                         <span class="text text-1">Créer</span>
                         <span class="text text-2" aria-hidden="true">Créer</span>
-                      </a>
+                    </a>
                     <a href="Client.html" class="btn">
-                            <span class="text text-1">Appercu</span>
-                            <span class="text text-2" aria-hidden="true">Appercu</span>
+                        <span class="text text-1">Appercu</span>
+                        <span class="text text-2" aria-hidden="true">Appercu</span>
                     </a>
                 </form>
-            </div> 
-               </section> 
-               </section>   
-                <section class="contact" id="contact">     
-                <h1 class="heading">contact</h1> 
-                <img class="li" src="images/separator.png" alt=""> 
-                <div class="row">
+
+               
+            </div>
+            <img class="mod" src="images/ODIEVENS.png" alt="">
+        </section>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading">contact</h1>
+        <img class="li" src="images/separator.png" alt="">
+        <div class="row">
             <div class="image">
                 <img src="images/phone.png" alt="">
-            </div>        
+            </div>
             <form action="">
                 <h3>Ecrivez-Nous ici</h3>
                 <input type="text" placeholder="nom" class="box">
@@ -95,11 +95,12 @@
                     <span class="text text-2" aria-hidden="true">Envoie</span>
                 </a>
             </form>
-        </div>   
-	 </section> 
-	    <section class="footer">  
-		<div class="box-container">         
-		<div class="box">
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
                 <h3>Suivez-Nous ici</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ex.</p>
                 <div class="share">
@@ -107,43 +108,85 @@
                     <a href="#" class="fab fa-instagram"></a>
                     <a href="#" class="fab fa-github"></a>
                 </div>
-            </div>            
-	     <div class="box">
+            </div>
+            <div class="box">
                 <h3>contact</h3>
                 <p>+123-45-67</p>
                 <a href="#" class="link">zipex98@gmail.com</a>
-            </div>    
-	       <div class="box">
+            </div>
+            <div class="box">
                 <h3>Notre Adresse</h3>
-                <p>230 points of the pines <br>
-                colorado springs  <br>
-                unites states</p>
-            </div>  
-	      </div>      
-	       <div class="credit">| all rights are reserved!</div>
-	    </section>  
-	      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                <p>230 points of the pines <br> colorado springs <br> unites states</p>
+            </div>
+        </div>
+        <div class="credit">| all rights are reserved!</div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>    <script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
         // Function to handle form submission
         function handleFormSubmit(event) {
-          event.preventDefault();         
-          const form = document.getElementById("createEventForm");
-          const formData = new FormData(form);
-          const data = {};
-          formData.forEach((value, key) => {
-            data[key] = value;
-          }); 
-            // Make a POST request to your API using Axios
-          axios.post("http://localhost:5000/ReqEvent", data).then((response) => {
-              // Handle the API response here if needed
-              console.log("API Response:", response.data);
-            })
-            .catch((error) => {
-              console.error("Error:", error);
+            event.preventDefault();
+            const form = document.getElementById("createEventForm");
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
             });
-        }        // Add click event listener to the "Créer" button
+            // Make a POST request to your API using Axios
+            axios.post("http://localhost:5000/ReqEvent", data)
+                .then((response) => {
+                    // Handle the API response here if needed
+                    console.log("API Response:", response.data);
+                    const queryString = encodeURIComponent(JSON.stringify(response.data));
+                    window.location.href = "index.html?response=" + queryString;
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+        }
+        // Add click event listener to the "Créer" button
         const createButton = document.getElementById("createEventBtn");
-  createButton.addEventListener("click", handleFormSubmit);
-      </script></body>
+        createButton.addEventListener("click", handleFormSubmit);
+
+        // Fonction pour gérer la soumission du formulaire de connexion
+function handleLoginFormSubmit(event) {
+    event.preventDefault();
+    // Remplacez cette partie par votre logique de soumission de formulaire de connexion réelle
+    // Par exemple, utilisez AJAX pour envoyer les informations de connexion au backend
+    // et récupérez le nom d'utilisateur dans la réponse.
+
+    // Supposons que vous ayez une API avec une route d'authentification "/login" qui renvoie le nom d'utilisateur.
+    const loginData = {
+        username: "votre_nom_d_utilisateur",
+        password: "votre_mot_de_passe",
+    };
+
+    // Faites une requête POST à votre API pour effectuer l'authentification.
+    axios.post("http://localhost:5000/ReqEvent", loginData)
+        .then((response) => {
+            // L'authentification a réussi, récupérez le nom d'utilisateur à partir de la réponse de l'API.
+            const username = response.data.username;
+
+            // Mettez à jour l'élément userDisplayName avec le nom d'utilisateur
+            const userDisplayNameElement = document.getElementById("userDisplayName");
+            userDisplayNameElement.textContent = username;
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            // Gérer les erreurs d'authentification ici.
+        });
+}
+
+    </script>
+</body>
+
 </html>

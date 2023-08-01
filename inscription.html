@@ -4,27 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulaire d'inscription</title>
-  <link rel="stylesheet" href="/css/stylleInscr.css">
+  <link rel="stylesheet" href="css/stylleInscr.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Inscription</h1>
-    <form>
-      <label for="username">Nom d'utilisateur</label>
-      <input type="text" id="username" name="username" required>
-      
-      <label for="email">Adresse e-mail</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="password">Mot de passe</label>
-      <input type="password" id="password" name="password" required>
-      
-      <label for="confirm-password">Confirmer le mot de passe</label>
-      <input type="password" id="confirm-password" name="confirm-password" required>
-      
-      <button type="submit">S'inscrire</button>
-    </form>
-    <p>Vous avez un Compte? <a href="connexion.html">Se Connecter</a></p>
+  <div class="ii">
+        <img src="images/LOGO PNG OK 2 1.png" alt="">
+      <div class="container">
+        
+        <h1>Inscription</h1>
+        <form id="createUsersForm">
+          <label for="username">Nom d'utilisateur</label>
+          <input type="text" id="username" name="username" required>
+          
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" required>
+          
+          <label for="confirm-password">Confirmer le mot de passe</label>
+          <input type="password" id="confirm-password" name="confpassword" required>
+          
+          <button id="btnInscription" type="submit">S'inscrire</button>
+        </form>
+        <p>Vous avez un Compte? <a href="connexion.html">Se Connecter</a></p>
+      </div>
   </div>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+       // Function to handle form submission
+       function handleFormSubmit(event) {
+         event.preventDefault();         
+         const form = document.getElementById("createUsersForm");
+         const formData = new FormData(form);
+         const data = {};
+         formData.forEach((value, key) => {
+           data[key] = value;
+         }); 
+           // Make a POST request to your API using Axios
+         axios.post("http://localhost:5000/ReqUsers", data).then((response) => {
+             // Handle the API response here if needed
+             console.log("API Response:", response.data);
+           })
+           .catch((error) => {
+             console.error("Error:", error);
+           });
+       }        // Add click event listener to the "Créer" button
+       const createButton = document.getElementById("btnInscription");
+       createButton.addEventListener("click", handleFormSubmit);
+</script>  
 </body>
 </html>
