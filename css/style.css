@@ -659,8 +659,26 @@ html {
 	gap: 60px;
 }
 
+.dis1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.home1 {
+	height: 300px;
+	color: white;
+	display: flex;
+	align-items: center;
+	background: url("/images/maria.png") no-repeat;
+	background-size: cover;
+	background-position: center
+}
+
+
 .mod{
-	width: 110%;
+	width: 90%;
 	height: 10%;
 }
 
@@ -683,3 +701,195 @@ html {
 label{
 	font-size: 15px;
 }
+
+
+
+
+
+
+
+.header1 {
+	
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: var(--white);
+	box-shadow: var(--box-shadow);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 9%;
+}
+
+.navbar1{
+	margin-left: 300px;
+}
+
+.header .navbar1 a {
+	font-size: 1.7rem;
+	color: var(--black);
+	margin: 0 1rem;
+	padding-block: 1rem;
+}
+
+.header .navbar1 a:hover {
+	color: var(--primary-color);
+}
+
+.header .navbar1 .hover-underline {
+	position: relative;
+	max-width: max-content;
+}
+
+.header .navbar1 .hover-underline::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0.5rem;
+	border-block: .1rem solid var(--primary-color);
+	transform: scaleX(0.2);
+	opacity: 0;
+	transition: 500ms ease;
+}
+
+.header .navbar1 .hover-underline:is(:hover, :focus-visible)::after {
+	transform: scaleX(1);
+	opacity: 1;
+}
+
+.home1 {
+	height: 400px;
+	color: white;
+	display: flex;
+	align-items: center;
+	background: url("/images/maria.png") no-repeat;
+	background-size: cover;
+	background-position: center
+}
+
+.home1 .content {
+	max-width: 50%;
+}
+
+.home1 .content h3 {
+	font-size: 20 rem;
+	color: var(--white);
+	line-height: 1.2;
+}
+
+.home1 .content p {
+	font-size: 1.5rem;
+	line-height: 2;
+	color: var(--white);
+	padding: 1rem 0;
+}
+
+.dd{
+	text-align: center;
+	font-size: 35px;
+	color: #fff;
+}
+
+.about1{
+	background-color: rgb(255, 255, 255);;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dis1{
+	display: flex;
+	justify-content: center;
+	gap: 70px;
+}
+
+.profil1{
+	width: 250px;
+	height: 300px;
+	background-color: #491801;
+}
+
+.descriptiontitre1{
+	width: 70%;
+	font-size: 13px;
+	text-align: center;
+	padding: 10px;
+	margin: 30px;
+       border: solid 1px #491801;
+	border-radius: 20px 20px 20px;
+}
+
+.footer1 {
+	
+	background:  url("/images/maria1.png") no-repeat;
+	text-align: center;
+}
+
+.heading1 {
+	position: relative;
+	color: var(--primary-color);
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .4rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+
+
+.heading1::after {
+	content: url('../images/');
+	display: block;
+	width: 45rem;
+	margin-inline: auto;
+	margin-top: -1rem;
+}
+
+.li1{
+	width: 170px;
+	margin-top: -290px;
+	
+	
+}
+
+.footer1 .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 2rem;
+}
+
+.footer1 .box-container .box h3 {
+	font-size: 2.2rem;
+	color: var(--primary-color);
+	padding: 1rem 0;
+}
+
+.footer1 .box-container .box p {
+	font-size: 14px;
+	color: var(--black);
+	line-height: 2;
+	
+}
+
+.contact1 .row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	
+}
+
+.contact1{
+	background-color: #ffffff;
+	height: 10px;
+	text-align: center;
+}
+
+
+
+
+
+

@@ -8,6 +8,13 @@
 	--box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+.li{
+	width: 240px;
+	margin-top: -120px;
+	
+	
+}
+
 .dd{
 	text-align: center;
 	font-size: 65px;
@@ -101,6 +108,22 @@ section{
 	z-index: -1;
 }
 
+.dis{
+	display: flex;
+	justify-content: center;
+	gap: 70px;
+}
+
+.descriptiontitre{
+	width: 50%;
+	font-size: 20px;
+	text-align: center;
+	padding: 70px;
+	margin: 30px;
+       border: solid 1px #491801;
+	border-radius: 20px 20px 20px;
+}
+
 .btn .text {
 	transition: 250ms ease;
 }
@@ -179,6 +202,10 @@ section{
 .header .logo i {
 	color: var(--primary-color);
 	padding-right: .5rem;
+}
+
+.navbar{
+	margin-left: 800px;
 }
 
 .header .navbar a {
@@ -263,6 +290,7 @@ section{
 	width: 100%;
 }
 
+
 .header .login-form .remember {
 	display: flex;
 	align-items: center;
@@ -270,11 +298,15 @@ section{
 	margin: .7rem 0;
 }
 
+
+
 .header .login-form .remember label {
 	font-size: 1.5rem;
 	color: var(--black);
 	cursor: pointer;
 }
+
+
 
 .home {
 	min-height: 100vh;
@@ -318,7 +350,12 @@ input{
 
 textarea{
 	background-color: rgb(242, 241, 241);;	
-}	
+}
+
+.about{
+	display: flex;
+	flex-direction: row;
+}
 
 
 .about .container {
@@ -430,13 +467,13 @@ textarea{
 }
 
 .footer .box-container .box h3 {
-	font-size: 2.2rem;
+	font-size: 3.2rem;
 	color: var(--primary-color);
 	padding: 1rem 0;
 }
 
 .footer .box-container .box p {
-	font-size: 1.5rem;
+	font-size: 20px;
 	color: var(--black);
 	line-height: 2;
 	padding: 1rem 0;
@@ -456,6 +493,11 @@ textarea{
 	color: var(--primary-color);
 	margin-right: .3rem;
 	text-align: center;
+}
+
+.dis{
+	display: flex;
+	flex-direction: row;
 }
 
 .footer .box-container .box .share a:hover {
@@ -500,12 +542,22 @@ section {
 	padding: 3rem 2rem;
 }
 
+.about{
+	display: flex;
+	flex-direction: column;
+}
+
 }
 
 @media (max-width:768px) {
 
 #menu-btn {
 	display: inline-block;
+}
+
+.about{
+	display: flex;
+	flex-direction: column;
 }
 
 .header .navbar {
@@ -537,138 +589,55 @@ section {
 }
 }
 
+
+
 @media (max-width:450px) {
 html {
 	font-size: 50%;
 }
+
+.dis{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.descriptiontitre{
+	width: 90%;
+	margin-top: 50px;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+	margin: 30px;
+       border: solid 1px #491801;
+	border-radius: 20px 20px 20px;
+}
+
+
 }
 
 label{
 	font-size: 15px;
 }
 
+.about{
+	display: flex;
+	flex-direction: column;
+}
+
 .profil{
-	width: 400px;
-	height: 600px;
+	width: 250px;
+	height: 400px;
 	background-color: #491801;
 }
 
-.dis{
-	display: flex;
-	gap: 30px;
-	align-items: center;
-	justify-content: space-between;
-}
 
-
-
-.descriptiontitre{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: solid #491801 1px;
-	width: 900px;
-	height: 380px;
-	color: black;
-}
-
-.description{
-	width: 500px;
-	font-size: 20px;
-	text-align: center;
-}
-
-.titredescription{
-	margin-left: 250px;
-	font-size: 20px;
-	margin-top: 40px;
-	font-weight: bold;
-
-}
-
-.descriptiontitre{
-	border-radius: 10px 50px 10px;
-}
-
-
-.profil {
-	width: 300px;
-	height: 450px;
-	margin-bottom: 20px;
-     }
      
-     .cadre {
-	background-color: #f9f9f9;
-	padding: 20px;
-	border-radius: 5px;
-     }
+    
      
-     .titredescription {
-	color: #333;
-     }
-     
-     .description {
-	color: #555;
-	line-height: 1.6;
-     }
-     
-     /* CSS spécifique pour les écrans de taille maximale de 768px */
-     @media screen and (max-width: 768px) {
-	.profil {
-	  width: 180px;
-	  height: 250px;
-	}
-
-	.description{
-		width: 300px;
-		font-size: 15px;
-	}
-     
-	
-     
-	.titredescription {
-	  font-size: 24px;
-	}
-     
-	.descriptiontitre{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		border: solid #491801 1px;
-		width: 400px;
-		height: 380px;
-		color: black;
-	}
-     }
-     
-     /* CSS spécifique pour les écrans de taille maximale de 480px */
-     @media screen and (max-width: 320px) {
-
-	.about{
-		background-color: rgb(255, 255, 255);;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.profil {
-	  width: 20px;
-	  height: 40px;
-	}
-     
-	.titredescription {
-	  font-size: 10px;
-	}
-     
-	.description {
-	  font-size: 10px;
-	}
-	.descriptiontitre{
-		width: 80px;
-	}
-     }
-
+    
 
 
 
