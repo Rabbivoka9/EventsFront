@@ -7,49 +7,60 @@
   <link rel="stylesheet" href="css/Styleconnexion.css">
 </head>
 <body>
+ 
   <div class="ii">
-      <div class="container">
-        <h1>Se Connecter</h1>
-        <form id="loginForm">
-          <label for="username">Email</label>
-          <input type="text" id="username" name="username" required>
+    <div class="container">
+      <h1>Se Connecter</h1>
+      
+      <form id="loginForm">
+        <label for="username">Email</label>
+        <input type="text" id="username" name="username" required>
           
-          <label for="password">Mot de passe</label>
-          <input type="password" id="password" name="password" required>
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" required>
           
-          <button id="btnlogin" type="submit">Se connecter</button>
-        </form>
-        <p>Vous n'avez pas de Compte? <a href="inscription.html">S'Inscrire</a></p>
-      </div>
+        <button id="btnlogin" type="submit">Se connecter</button>
+      </form>
+      
+     
+      <p>Vous n'avez pas de Compte? <a href="inscription.html">S'Inscrire</a></p>
+    </div>
   </div>
   
-
+  
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
 
-  function handleFormSubmit(event) {
-    event.preventDefault();         
-    const form = document.getElementById("loginForm");
-    const formData = new FormData(form);
-    const data = {};
-    formData.forEach((value, key) => {
-      data[key] = value;
-    }); 
+  <script>
+  
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const form = document.getElementById("loginForm");
+      const formData = new FormData(form);
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      }); 
    
-    axios.post("http://localhost:4000/ReqLogin", data).then((response) => {
-      
-        console.log("API Response:", response.data);
-    const queryString = encodeURIComponent(JSON.stringify(response.data));
-     window.location.href = "index.html?response=" + queryString;
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  }      
-  const createButton = document.getElementById("btnlogin");
-createButton.addEventListener("click", handleFormSubmit);
-</script>  
+     
+      axios.post("http://localhost:4000/ReqLogin", data)
+        .then((response) => {
+          console.log("API Response:", response.data);
+          const queryString = encodeURIComponent(JSON.stringify(response.data));
+         
+          window.location.href = "index.html?response=" + queryString;
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    }      
+    
+  
+    const createButton = document.getElementById("btnlogin");
+    createButton.addEventListener("click", handleFormSubmit);
+  </script>
 </body>
 </html>
+
