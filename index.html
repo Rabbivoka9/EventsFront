@@ -74,6 +74,7 @@
                     <label>Programme</label>
                     <input name="titre1" type="text" placeholder="Titre1" class="box">
                     <input name="titre2" type="text" placeholder="Titre2" class="box">
+
                     <a href="#" id="createEventBtn" class="btn">
                         <span class="text text-1">Créer</span>
                         
@@ -86,11 +87,11 @@
 
                 <div class="container">
                     <h4>Enregisterer Les Participants</h4>
-                    <form action="#" method="post">
+                    <form action="#"  id="CreateInviteForm">
                             <input class="op1"  type="text" placeholder="Nom" id="nom" name="nom">
                             
                             <input class="op" type="text" placeholder="Table ou Siege" id="table" name="table">
-                            <a href="#" id="createEventBtn" class="btn">
+                            <a  id="createInviteBtn" class="btn">
                                 <span class="text text-1">Enregisterer</span>
                                
                             </a>
@@ -338,6 +339,35 @@ function handleLoginFormSubmit(event) {
         qrCode.clear();
         qrCode.makeCode(text);
     }
+</script>
+
+<script>
+    // Function to handle form submission
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        const form = document.getElementById("CreateInviteForm");
+        const formData = new FormData(form);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+        // Make a POST request to your API using Axios
+        axios.post("http://localhost:5000/ReqInvite", data)
+            .then((response) => {
+                // Handle the API response here if needed
+                console.log("API Response:", response.data);
+                const queryString = encodeURIComponent(JSON.stringify(response.data));
+                window.location.href = "index.html?response=" + queryString;
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+    }
+    // Add click event listener to the "Créer" button
+    const EnregistrButton = document.getElementById("createInviteBtn");
+    createButton.addEventListener("click", handleFormSubmit);
+
+   
 </script>
 
 </body>
