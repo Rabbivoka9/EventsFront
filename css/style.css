@@ -95,7 +95,7 @@ section{
 	margin-top: -1rem;
 }
 
-.btn {
+.btn1 {
 	position: relative;
 	display: inline-block;
 	margin-top: 1rem;
@@ -105,7 +105,26 @@ section{
 	text-transform: uppercase;
 	max-width: max-content;
 	border: .1rem solid var(--primary-color);
+	color: var(--primary-color);
 	background-color: var(--secondary);
+	padding: 1.2rem 4.5rem;
+	overflow: hidden;
+	z-index: 1;
+	border-radius: .5rem;
+}
+
+.btn {
+	position: relative;
+	display: inline-block;
+	margin-top: 1rem;
+	color: var(--primary-color);
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	max-width: max-content;
+	border: .1rem solid var(--secondary);
+	color: white;
+	background-color: #51023F;
 	padding: 1.2rem 4.5rem;
 	overflow: hidden;
 	z-index: 1;
@@ -117,17 +136,45 @@ section{
 	position: absolute;
 	bottom: 100%;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-50%); 
 	width: 200%;
 	height: 200%;
 	border-radius: 50%;
-	background-color: var(--primary-color);
+	color: #51023F;
+	background-color: #fac72b;
+	border: .1rem solid var(--primary-color);
+	
 	transition: 500ms ease;
 	z-index: -1;
 }
 
+.btn1::before {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%); 
+	width: 200%;
+	height: 200%;
+	border-radius: 50%;
+	color: white;
+	background-color: #51023F;
+	border: .1rem solid var(--primary-color);
+	
+	transition: 500ms ease;
+	z-index: -1;
+}
+
+.op{
+	margin-top: 10px;
+}
+
+.op1{
+	margin-top: 15px;
+}
+
 .btn .text {
-	transition: 250ms ease;
+	transition: 250ms ease; 
 }
 
 .navbar{
@@ -726,6 +773,7 @@ label{
 
 .navbar1{
 	margin-left: 300px;
+	display: none;
 }
 
 .header .navbar1 a {
@@ -905,6 +953,10 @@ label{
      }
      
      .modal-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: #fefefe;
 	margin: 15% auto;
 	padding: 20px;
@@ -980,4 +1032,46 @@ label{
 	margin-top: 20px;
    }
 
+
+
+    .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
 
