@@ -178,7 +178,7 @@ section{
 }
 
 .navbar{
-	margin-left: 800px;
+	margin-left: 500px;
 }
 
 .navbar a{
@@ -1074,4 +1074,9 @@ label{
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+
+
+	 .user-display{
+		font-size: 10px;
+	 }
 
