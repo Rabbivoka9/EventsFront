@@ -350,6 +350,32 @@ section{
 	cursor: pointer;
 }
 
+
+.home2 {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url('../images/eva.jpg') no-repeat;
+	background-size: cover;
+	background-position: center
+}
+.home2 .content {
+	max-width: 50%;
+}
+
+.home2 .content h3 {
+	font-size: 5rem;
+	color: var(--white);
+	line-height: 1.2;
+}
+
+.home2 .content p {
+	font-size: 1.5rem;
+	line-height: 2;
+	color: var(--white);
+	padding: 1rem 0;
+}
+
 .home {
 	min-height: 100vh;
 	display: flex;
@@ -753,7 +779,9 @@ label{
 
 
 
-
+.navbar{
+	margin-left: 850px;
+}
 
 
 
