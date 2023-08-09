@@ -355,7 +355,7 @@ section{
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
-	background: url('../images/eva.jpg') no-repeat;
+	background: url('../images/eva.png') no-repeat;
 	background-size: cover;
 	background-position: center
 }
