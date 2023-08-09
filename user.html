@@ -74,7 +74,15 @@
                     <input name="imageprofil" type="file" placeholder="Titre Description" class="box">
                     <label>Programme</label>
                     <input name="titre1" type="text" placeholder="Titre1" class="box">
+                    <input name="soust1" type="text" placeholder="activite" class="box">
+                    <input name="soust2" type="text" placeholder="activite" class="box">
+                    <input name="soust3" type="text" placeholder="activite" class="box">
+                    <input name="soust4" type="text" placeholder="activite" class="box">
                     <input name="titre2" type="text" placeholder="Titre2" class="box">
+                    <input name="soust5" type="text" placeholder="activite" class="box">
+                    <input name="soust6" type="text" placeholder="activite" class="box">
+                    <input name="soust7" type="text" placeholder="activite" class="box">
+                    <input name="soust8" type="text" placeholder="activite" class="box">
 
                     <a href="#" id="createEventBtn" class="btn">
                         <span class="text text-1">Créer</span>
@@ -143,17 +151,17 @@
                 <div class="box-container">
                     <div class="box">
                         <h3 id="titre1">Vendredi</h3>
-                        <p>14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
-                        <p>14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
-                        <p>14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
-                        <p>14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
+                        <p id="soust1">14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
+                        <p id="soust2">14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
+                        <p id="soust3">14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
+                        <p id="soust4">14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
                     </div>
                     <div class="box">
                         <h3 id="titre2">Samedi</h3>
-                        <p>14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
-                        <p>14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
-                        <p>14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
-                        <p>14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
+                        <p id="soust5">14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
+                        <p id="soust6">14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
+                        <p id="soust7">14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
+                        <p id="soust8">14h30': Celebration Nupcial a la Paroisse Saint Paul</p>
                         
                     </div>
                 </div>
@@ -281,6 +289,22 @@
                     titre1.textContent = response.data.titre1;
                     const t2 = document.getElementById("titre2");
                     titre2.textContent = response.data.titre2;
+                    const p1 = document.getElementById("soust1");
+                    p1.textContent = response.data.soust1;
+                    const p2 = document.getElementById("soust2");
+                    p2.textContent = response.data.soust2;
+                    const p3 = document.getElementById("soust3");
+                    p3.textContent = response.data.soust3;
+                    const p4 = document.getElementById("soust4");
+                    p4.textContent = response.data.soust4;
+                    const p5 = document.getElementById("soust5");
+                    p5.textContent = response.data.soust5;
+                    const p6 = document.getElementById("soust6");
+                    p6.textContent = response.data.soust6;
+                    const p7 = document.getElementById("soust7");
+                    p7.textContent = response.data.soust7;
+                    const p8 = document.getElementById("soust8");
+                    p8.textContent = response.data.soust8;
                     
                     // Handle the API response here if needed
                     console.log("API Response:", response.data);
